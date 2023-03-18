@@ -1,0 +1,20 @@
+print("Welcome to prime number checker program")
+#Write your code below this line 👇
+[#Do NOT change any of the code below👇
+n = int(input("Check this number: "))
+#prime_checker(number=n)
+def prime_checker():
+    if n==1:
+        print("It is a prime number")
+    elif n > 1:
+        for numbers in range(2,n-1):
+            if (n% numbers) == 0:
+                print(n)
+                print("nOT A Prime Number")
+            else:
+                print(n)
+                print("This is a prime number")
+    else:
+        print("Not a prime number")
+        print(n)
+prime_checker()
